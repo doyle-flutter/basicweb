@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div.myDropMenu{
+            width: 100px;
+        }
+        div.myDropMenu > div.selectTxt{
+            width: 100px;
+            height: 100px;
+            background-color: grey;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+            font-weight: bold;  
+        }
+
+        div.myDropMenu > ul.menus{
+            line-height: normal;
+            list-style: none;
+            padding: 2px;
+            margin: 0;
+            background-color: grey;
+            display: none;
+        }
+
+        div.myDropMenu > ul.menus > li{
+            line-height: normal;
+            background-color: green;
+            text-align: center;
+            color: white;
+            border: 1px solid white;
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="myDropMenu" class="myDropMenu">
+        <div id='selectTxt' class="selectTxt">선택해주세요</div>
+        <ul id="menus" class="menus"></ul>
+    </div>
+
+    <script>
+        let myDropMenu = document.getElementById('myDropMenu');
+        let menus = document.getElementById('menus');
+        let selectTxt = document.getElementById('selectTxt');
+        let datas = ['메뉴1', '메뉴2'];
+        datas.forEach((e) => {
+            let itemTag = document.createElement('li');
+            itemTag.innerText = e;
+            itemTag.addEventListener('click',function(){
+                selectTxt.innerText = e;
+                menus.style.display = 'none';
+            }, true);
+            menus.appendChild(itemTag);
+        });
+
+        myDropMenu.addEventListener('click', function(){
+            menus.style.display = 'block';
+        },true);
+    </script>
+</body>
+</html>
