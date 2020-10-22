@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SubPage</title>
+    <link rel="stylesheet" href="./subPage.css">
+</head>
+<body>
+    <!-- 
+        [@] HTML : 문서
+        [ ] CSS : 문서 디자인 꾸미기
+        [ ] JS : 문서에 기능을 부여
+    -->
+
+    <!-- 
+        * 기본 태그 12개 - 필수 암기
+        * 이외 내용은 사용하면서 찾아보거나
+        * 익숙해지고 배워도 충분합니다
+        1. h2~h6
+        2. p
+        3. a
+        4. img
+        5. div
+        6. ul || ol
+        7. li
+        8. span
+        9. br
+        10. style
+        11. link
+        12. script
+     -->
+
+
+     <div class="appBar"><a href="./web.html">뒤로가기</a></div>
+     <div class="sideBar">
+         <ul id="menu">
+             <li id="menuItems"><p><a href="#div">div</a></p></li>
+         </ul>
+     </div>
+
+    <div id="contentWrapper" class="contentWrapper">
+        <!-- 
+            * 구조
+            - 예시
+            - 설명
+            - 코드
+        -->
+
+        <!-- JS를 통해 구성 할 내용 -->
+        <div id="contentBox" class="contentBox">
+            <!-- 예시 -->
+            <div id="contentTitle"><h2>div</h2></div>
+            <div class="contentExam" id="contentExam">
+                <div style="border: 1px solid red; height: 100px; width: 90%; margin: 0 auto;"></div>
+            </div> 
+            <!-- 설명 -->
+            <div class="contentDes"> 
+                <p>
+                    <code>div</code>
+                    태그는 주로 영역을 나눌 때 사용하며, 영역 안에 내용(텍스트, 이미지, 영상 등)을 담아서 사용할 수 있음
+                </p>
+                <ul>
+                    <li><p>기본 다지인은 없으며</p></li>
+                    <li><p>부모 태그의 가로길이 100% 차지하는 특징</p></li>
+                </ul>
+            </div>
+            <!-- 코드 -->
+            <div id='contentCode' class="contentCode">
+                <code>
+                    &lt;div&gt; &lt;/div&gt;
+                </code>
+            </div>
+        </div>
+        
+    </div>
+    <script src="./subPage.js"></script>
+</bod>
+</html>
