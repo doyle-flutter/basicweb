@@ -3,8 +3,8 @@
 ### 내용
  - [ ] FirstWEB : 작성 중 ...[이동](https://github.com/doyle-flutter/basicweb/tree/master/firstWEB)
    - - [x] HTML 정적 생성 : 
-   Main [이동](https://github.com/doyle-flutter/basicweb/blob/master/firstWEB/web.html) 
-   Sub [이동](https://github.com/doyle-flutter/basicweb/blob/master/firstWEB/subPage.html)
+   MainPage [이동](https://github.com/doyle-flutter/basicweb/blob/master/firstWEB/web.html) 
+   SubPage [이동](https://github.com/doyle-flutter/basicweb/blob/master/firstWEB/subPage.html)
     - - [x] CSS [이동](https://github.com/doyle-flutter/basicweb/blob/master/firstWEB/subPage.css)
     - - [x] JS class , DOM, Promise, Event ... [이동](https://github.com/doyle-flutter/basicweb/blob/master/firstWEB/subPage.js)
    - - [ ] 서버 사이드 Node.js(Express.js)
