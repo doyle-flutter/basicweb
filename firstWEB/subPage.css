@@ -6,7 +6,7 @@
 
 /* Tag Design*/
 body{
-    background-color: grey;
+    background-color: #eee;
 }
 a{
     color:black;
@@ -20,35 +20,42 @@ ul{
 /* Custom Design */
 div.appBar{
     position: fixed;
-    padding-left: 100px;
-    line-height: 50px;
+    padding-left: 20px;
+    line-height: 60px;
     top: 0;
     left: 0;
     right: 0;
     background-color: white;
     z-index: 100;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+div.appBar > a{
+    margin: 0 5px;
 }
 div.sideBar{
     position: fixed;
-    top: 0;
+    top: 60px;
     left: 0;
-    right: 80%;
     bottom: 0; 
     background-color: white;
-    padding: 100px 10px 10px 2%;
+    padding: 20px 15px 10px 10px;
+    border-right: 2px solid rgba(0, 0, 0, 0.16);
+    z-index: 50;
 }
-
+div.sideBar > ul > li{
+    margin: 20px 10px;
+}
 
 div.contentWrapper{
     position: absolute;
     right: 0;
-    left: 20%;
-    margin: 70px 4%;
+    left: 0;
+    margin: 70px 10%;
     
 }
 
 div.contentBox{
-    padding: 20px; 
+    padding: 65px 20px; 
     background-color: white;
 }
 
