@@ -9,9 +9,9 @@
 </head>
 <body>
     <!-- 
-        [@] HTML : 문서
-        [ ] CSS : 문서 디자인 꾸미기
-        [ ] JS : 문서에 기능을 부여
+        HTML : 문서
+        CSS : 문서 디자인 꾸미기
+        JS : 문서에 기능을 부여
     -->
 
     <!-- 
@@ -33,8 +33,11 @@
      -->
 
 
-     <div class="appBar"><a href="./web.html">뒤로가기</a></div>
-     <div class="sideBar">
+     <div class="appBar">
+        <a onclick="sideBarToggle()">=</a>
+        <a href="./web.html">뒤로가기</a> 
+    </div>
+     <div id="sideBar" class="sideBar">
          <ul id="menu">
              <li id="menuItems"><p><a href="#div">div</a></p></li>
          </ul>
