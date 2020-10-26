@@ -1,0 +1,143 @@
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* -- 선택 -- */
+/* 모든 내용을 정의 */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* 태그의 기본 속성을 변경 할 수 있음 */
+a{
+    
+    color: black;
+}
+
+/* 원하는 태그만 선택 할 수 있음 - 필수 3가지 */
+/* 1. class 선택(태그를 붙여서 사용 할 수 있음) */
+.myTagClass{
+    color: red;
+}
+div.myTagClass{
+    color: red;
+}
+
+/* 2. id 선택(태그를 붙여서 사용 할 수 있음) */
+#myTagId{
+    color: blue;
+}
+div#myTagId{
+    color: blue;
+}
+
+/* 3. 특정 태그 내부의 태그만 선택 */
+
+
+div > ul > li > a{
+/* 
+    모든 a 태그가 아닌 
+    <div>
+        <ul>
+            <li>
+                <a>이 곳의 태그만 지정</a>
+            </li>
+        </ul>
+    </div>
+*/
+    background-color: pink;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* -- CSS 필수 13개-- */
+div.tagWidth{
+    width: 100px;
+    /* width: 100%; */
+}
+div.tagHeight{
+    height: 100px;
+    /* height: 100%; */
+}
+div.tagMargin{
+    margin: 10px;
+    /* margin: 10px 20px;
+    margin: 20px auto;
+    margin: 10px 20px 30px 40px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px; */
+}
+div.tagPadding{
+    padding: 10px;
+    /* padding: 10px 20px;
+    padding: 20px auto;
+    padding: 10px 20px 30px 40px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 40px; */
+}
+div.tagDisplay{
+    display: block;
+    /* display: inline;
+    display: inline-block;
+    display: flex; 
+    display: none; */
+    /* 
+        none과 같이 보면 좋은 내용
+        visibility: visible;
+        visibility: hidden; 
+    */
+}
+div.tagLineHeight{
+    line-height: 30px;
+    /* height 차이가 중요
+    height: 30px; */
+}
+div.tagFontColor{
+    color: red;
+    /* color: #eeffdd;
+    color: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.5); */
+}
+div.tagFontStyle{
+    font-size: 10px;
+    /* font-size: 10rem;
+    font-size: 10em; */
+
+    font-weight: bold;
+    /* font-weight: 600; */
+}
+div.tagTextStyle{
+    text-align: center;
+    /* text-align: left; */
+    text-decoration: underline;
+    /* text-decoration: none; */
+}
+div.tagVerticalAlign{
+    vertical-align: top;
+    /* line-height 와 같이 보면 좋습니다
+    vertical-align: middle; */
+}
+div.tagBorder{
+    border: 1px solid red;
+    /* border: 1px dashed red;
+    border: 1px groove red; */
+}
+div.tagBoxShadow{
+    box-shadow: 5px 10px 30px 20px blue;
+}
+div.tagPosition{
+    position: relative;
+    /* position: absolute;
+    position: fixed;
+    position: sticky;
+    position: static; */
+    top: 0;
+    left: 10%;
+    right: 20%;
+    bottom: 30%;
+}
+
+/* 중복 내용이 있을 경우 가장 마지막에 사용한 내용으로 덮어씌임 */
