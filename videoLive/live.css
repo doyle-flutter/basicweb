@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    font-size: 0;
+}
+
+div.contentWrapper{
+    margin: 0 auto;
+    background-color: #eee;
+    letter-spacing: 0;
+    font-size: 0;
+    white-space: 0;
+}
+div.contentWrapper > div.contentVideos{
+    width: 70%;
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: 0;
+    font-size: 0;
+    white-space: 0;
+}
+div.contentWrapper > div.contentVideos > video{
+    height: auto;
+    vertical-align: top;
+}
+div.contentWrapper > div.contentChat{
+    width: 30%;
+    letter-spacing: 0;
+    vertical-align: top;
+    display: inline-block;
+    background-color: #ddd;
+    position: relative;
+    font-size: 0;
+}
+div.contentWrapper > div.contentChat > ul{
+    border: 1px solid #808080;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    letter-spacing: 0;
+    white-space: 0;
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+div.contentWrapper > div.contentChat > ul > li{
+    padding: 10px;
+    background-color: red;
+    color: white;
+    margin: 5px 0;
+}
+div.contentWrapper > div.contentChat > ul > li:nth-child(1){
+    margin: 0;
+}
+
+div.contentTitle{
+    height: 19vh;
+    margin-top: 1vh;
+    width: 70%;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1rem;
+}
+div.contentTitle > div.contentDes{
+    padding-left: 40px;
+}
+div.contentTitle > div.contentUser{}
+div.contentTitle > div.contentUser > ul{
+    font-size: 0;
+    padding-left: 40px;
+    overflow: hidden;
+}
+div.contentTitle > div.contentUser > ul > li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: red;
+    margin: 10px;
+    font-size: 1rem;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 0;
+    color: white;
+    font-weight: bold;
+}
+
+div.userChat{
+    display: inline-block;
+    width: 30%;
+    position: relative;
+}
+div.userChat > input{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid grey;
+    border-radius: 0;
+}
+div.userChat > input:focus{
+    outline: none;
+}
+div.userChat > div.userChatIcon{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    color: red;
+    line-height: 40px;
+    font-size: 1rem;
+    cursor: pointer;
+}
